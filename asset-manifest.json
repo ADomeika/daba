@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/daba/static/css/main.6940ac67.chunk.css",
+    "main.css": "/daba/static/css/main.29170624.chunk.css",
     "main.js": "/daba/static/js/main.3b600a49.chunk.js",
     "main.js.map": "/daba/static/js/main.3b600a49.chunk.js.map",
     "runtime-main.js": "/daba/static/js/runtime-main.c9a4612b.js",
@@ -8,15 +8,16 @@
     "static/js/2.8ee752a1.chunk.js": "/daba/static/js/2.8ee752a1.chunk.js",
     "static/js/2.8ee752a1.chunk.js.map": "/daba/static/js/2.8ee752a1.chunk.js.map",
     "index.html": "/daba/index.html",
-    "precache-manifest.9089988391be3d2d7850b8626eb0fe0d.js": "/daba/precache-manifest.9089988391be3d2d7850b8626eb0fe0d.js",
+    "precache-manifest.d9809853375fe8b46dda2b345178f119.js": "/daba/precache-manifest.d9809853375fe8b46dda2b345178f119.js",
     "service-worker.js": "/daba/service-worker.js",
-    "static/css/main.6940ac67.chunk.css.map": "/daba/static/css/main.6940ac67.chunk.css.map",
-    "static/js/2.8ee752a1.chunk.js.LICENSE.txt": "/daba/static/js/2.8ee752a1.chunk.js.LICENSE.txt"
+    "static/css/main.29170624.chunk.css.map": "/daba/static/css/main.29170624.chunk.css.map",
+    "static/js/2.8ee752a1.chunk.js.LICENSE.txt": "/daba/static/js/2.8ee752a1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/daba/static/media/background.0fc87cd0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c9a4612b.js",
     "static/js/2.8ee752a1.chunk.js",
-    "static/css/main.6940ac67.chunk.css",
+    "static/css/main.29170624.chunk.css",
     "static/js/main.3b600a49.chunk.js"
   ]
 }
