@@ -1,0 +1,42 @@
+.product-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  color: #fff;
+  margin: 32px;
+  text-decoration: none;
+}
+
+.product__image {
+  width: 100%;
+}
+
+.product__title {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.product__price {
+  font-size: 24px;
+}
+
+/* Tablet and up */
+@media screen and (min-width: 768px) {
+  .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: calc(50% - 64px);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .product {
+    width: calc(33% - 64px);
+  }
+}

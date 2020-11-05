@@ -1,0 +1,16 @@
+.slogan {
+  font-size: 42px;
+  margin-bottom: 80px;
+}
+
+.cta-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  margin-top: 40px;
+  padding: 15px 40px;
+  text-decoration: none;
+}
