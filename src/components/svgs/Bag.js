@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Bag() {
+function Bag({ width = 20, height = 20, color = '#fff' }) {
   return (
     <svg
       version="1.1"
@@ -8,10 +8,10 @@ function Bag() {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 279 279"
-      width='40'
-      height='40'
+      width={width}
+      height={height}
       xmlSpace="preserve"
-      style={{ fill: '#fff' }}
+      style={{ fill: color }}
     >
       <path d="M262.421,270.339L246.466,72.896C246.151,69.001,242.898,66,238.99,66h-42.833v-9.495C196.157,25.348,171.143,0,139.985,0
         h-0.99c-31.157,0-56.838,25.348-56.838,56.505V66H39.99c-3.908,0-7.161,3.001-7.476,6.896l-16,198

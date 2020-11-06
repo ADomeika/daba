@@ -4,7 +4,7 @@
 
 .background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(/background.jpg);
+    url(background.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,10 +18,7 @@
 }
 
 .header {
-  align-items: center;
   background-color: rgba(35, 26, 11, 0.5);
-  display: flex;
-  justify-content: space-between;
   margin-top: 30px;
   position: sticky;
   top: 0;
@@ -31,7 +28,7 @@
 .main {
   color: #fff;
   flex: 1;
-  padding: 80px 30px 170px;
+  padding: 80px 30px;
   text-align: center;
 }
 
@@ -61,7 +58,10 @@
   .footer {
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
     padding: 20px;
+    width: 100%;
   }
 }
 
@@ -70,5 +70,9 @@
   .main {
     max-width: 1000px;
     margin: 0 auto;
+  }
+
+  .footer {
+    max-width: 1200px;
   }
 }

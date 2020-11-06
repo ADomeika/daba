@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
   return (
     <>
       <h1 className='slogan'>
-        Kada, jei ne <span>DABA</span>
+        Kada, jeigu ne dabar?
       </h1>
-      <a href='/parduotuve' className='cta-button'>
+      <Link to='/produktai' className='cta-button'>
         Paspausk cia
-      </a>
+      </Link>
     </>
   )
 }

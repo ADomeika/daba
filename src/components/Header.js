@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 import Bag from './svgs/Bag';
@@ -7,31 +8,31 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
+    <div className='header__inner'>
       <div className='mobile-nav'>
         <nav>
-          <div
+          <button
             className={`icon hamburger${isOpen ? ' open' : ''}`}
             onClick={() => setIsOpen(!isOpen)}
           >
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </nav>
       </div>
       <div className='logo'>
-        <a href='/' className='logo-link'>
+        <Link to='/' className='logo-link'>
           <img src='/logo192.png' alt='DABA logo' className='logo-image' />
-        </a>
+        </Link>
       </div>
-      <a href='/krepselis' className='cart'>
-        <Bag />
+      <Link to='/krepselis' className='cart'>
+        <Bag width='30' height='30' />
         <div className='cart-quantity'>
-          <span>1</span>
+          <span>0</span>
         </div>
-      </a>
-    </>
+      </Link>
+    </div>
   );
 };
 

@@ -3,10 +3,21 @@
   flex-direction: column;
 }
 
-.product {
+.product-list__product {
   color: #fff;
   margin: 32px;
   text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+.product-list__product:hover {
+  color: #ccc;
+}
+
+@media (hover: none) {
+  .product-list__product:hover {
+    color: inherit;
+  }
 }
 
 .product__image {
@@ -29,14 +40,14 @@
     flex-wrap: wrap;
   }
 
-  .product {
+  .product-list__product {
     width: calc(50% - 64px);
   }
 }
 
 /* Desktop */
 @media screen and (min-width: 1025px) {
-  .product {
+  .product-list__product {
     width: calc(33% - 64px);
   }
 }
