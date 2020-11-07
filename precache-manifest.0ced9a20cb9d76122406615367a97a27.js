@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9934be25ab4fc44e1ccea30ae99143d",
+    "revision": "1e198b2e214807db34abcd3e2d375cfb",
     "url": "/daba/index.html"
   },
   {
-    "revision": "631c26ef0129e119ddaa",
-    "url": "/daba/static/css/main.acf6b7b1.chunk.css"
+    "revision": "22b92025281f334be628",
+    "url": "/daba/static/css/main.32a42357.chunk.css"
   },
   {
     "revision": "1a04be008705e480eac7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/daba/static/js/2.a64b0565.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "631c26ef0129e119ddaa",
-    "url": "/daba/static/js/main.94fca385.chunk.js"
+    "revision": "22b92025281f334be628",
+    "url": "/daba/static/js/main.ed5f6074.chunk.js"
   },
   {
     "revision": "b548a1fc89e881fa4cfa",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ee6539921d713482b8ccd4d0d23961bb",
     "url": "/daba/static/media/Montserrat-Regular.ee653992.ttf"
+  },
+  {
+    "revision": "b396c21bfb57e957ee29dd1cd77eacb7",
+    "url": "/daba/static/media/about-image-1.b396c21b.jpg"
   },
   {
     "revision": "0fc87cd01e4f3a2fe29c0cf9998f654a",
