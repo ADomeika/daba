@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/daba/static/css/main.a1d33044.chunk.css",
-    "main.js": "/daba/static/js/main.d6fc901a.chunk.js",
-    "main.js.map": "/daba/static/js/main.d6fc901a.chunk.js.map",
+    "main.css": "/daba/static/css/main.3944d529.chunk.css",
+    "main.js": "/daba/static/js/main.aee72105.chunk.js",
+    "main.js.map": "/daba/static/js/main.aee72105.chunk.js.map",
     "runtime-main.js": "/daba/static/js/runtime-main.c9a4612b.js",
     "runtime-main.js.map": "/daba/static/js/runtime-main.c9a4612b.js.map",
-    "static/js/2.a5d6567f.chunk.js": "/daba/static/js/2.a5d6567f.chunk.js",
-    "static/js/2.a5d6567f.chunk.js.map": "/daba/static/js/2.a5d6567f.chunk.js.map",
+    "static/js/2.a64b0565.chunk.js": "/daba/static/js/2.a64b0565.chunk.js",
+    "static/js/2.a64b0565.chunk.js.map": "/daba/static/js/2.a64b0565.chunk.js.map",
     "index.html": "/daba/index.html",
-    "precache-manifest.d4041d0301bdb34428c40f05ff07f361.js": "/daba/precache-manifest.d4041d0301bdb34428c40f05ff07f361.js",
+    "precache-manifest.009c473198ec9d7fcbeea43e2a778640.js": "/daba/precache-manifest.009c473198ec9d7fcbeea43e2a778640.js",
     "service-worker.js": "/daba/service-worker.js",
-    "static/css/main.a1d33044.chunk.css.map": "/daba/static/css/main.a1d33044.chunk.css.map",
-    "static/js/2.a5d6567f.chunk.js.LICENSE.txt": "/daba/static/js/2.a5d6567f.chunk.js.LICENSE.txt",
+    "static/css/main.3944d529.chunk.css.map": "/daba/static/css/main.3944d529.chunk.css.map",
+    "static/js/2.a64b0565.chunk.js.LICENSE.txt": "/daba/static/js/2.a64b0565.chunk.js.LICENSE.txt",
     "static/media/App.css": "/daba/static/media/background.0fc87cd0.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c9a4612b.js",
-    "static/js/2.a5d6567f.chunk.js",
-    "static/css/main.a1d33044.chunk.css",
-    "static/js/main.d6fc901a.chunk.js"
+    "static/js/2.a64b0565.chunk.js",
+    "static/css/main.3944d529.chunk.css",
+    "static/js/main.aee72105.chunk.js"
   ]
 }
