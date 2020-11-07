@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './Product.css';
 
+import AppButton from '../ui/AppButton';
+
 const DATA = {
   id: 1,
   title: 'Silauoges hidrolatas',
@@ -10,7 +12,7 @@ const DATA = {
 }
 
 function Product() {
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const { id } = useParams();
   console.log(id);
 
@@ -19,10 +21,14 @@ function Product() {
       // TODO: CHECK IF QUANTITY IS AVAILABLE
       setQuantity(quantity + 1)
     } else {
-      if (quantity > 0) {
+      if (quantity > 1) {
         setQuantity(quantity - 1);
       }
     }
+  }
+
+  const addToCart = () => {
+    console.log('Add to cart', DATA)
   }
 
   return (
@@ -37,7 +43,7 @@ function Product() {
           <input type='radio' name='additions' className='additions-input' id='addition__with-spray' />
           <label htmlFor='addition__with-spray' className='additions-label'>
             <div>
-              <img className='additions-image' src='/cap-spray.png' alt='su purkstuku' />
+              <img className='additions-image' src={require('../../assets/images/cap-spray.png')} alt='su purkstuku' />
               <p>Su purkstuku</p>
             </div>
           </label>
@@ -47,7 +53,7 @@ function Product() {
           <input type='radio' name='additions' className='additions-input' id='addition__without-spray' defaultChecked />
           <label htmlFor='addition__without-spray' className='additions-label'>
             <div>
-              <img className='additions-image' src='/cap-no-spray.png' alt='be purkstuko' />
+              <img className='additions-image' src={require('../../assets/images/cap-no-spray.png')} alt='be purkstuko' />
               <p>Be purkstuko</p>
             </div>
           </label>
@@ -62,7 +68,7 @@ function Product() {
         <button
           className='quantity__reduce'
           onClick={() => changeQuantity('decrease')}
-          disabled={quantity === 0}
+          disabled={quantity === 1}
         >-</button>
         
         <p className='quantity__value'>{quantity}</p>
@@ -71,6 +77,10 @@ function Product() {
           className='quantity__increase'
           onClick={() => changeQuantity('increase')}
         >+</button>
+      </div>
+
+      <div className='actions'>
+        <AppButton onClick={addToCart}>I Krepseli</AppButton>
       </div>
     </div>
   )

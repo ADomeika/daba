@@ -1,10 +1,20 @@
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montserrat'),
+    url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('woff');
+}
+
 * {
   box-sizing: border-box;
+  font-family: Montserrat;
 }
 
 .background {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(background.jpg);
+    url(assets/images/background.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;

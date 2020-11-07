@@ -60,6 +60,7 @@
 .quantity__reduce:disabled,
 .quantity__increase:disabled {
   cursor: not-allowed;
+  color: #777;
 }
 
 .quantity__value {

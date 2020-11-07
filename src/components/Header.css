@@ -54,9 +54,9 @@
 .logo {
   align-items: center;
   display: flex;
-  height: 100px;
+  height: 80px;
   justify-content: center;
-  width: 100px;
+  width: 80px;
 }
 
 .logo-link {

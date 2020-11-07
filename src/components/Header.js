@@ -23,7 +23,7 @@ const Header = () => {
       </div>
       <div className='logo'>
         <Link to='/' className='logo-link'>
-          <img src='/logo192.png' alt='DABA logo' className='logo-image' />
+          <img src={require('../assets/images/logo192.png')} alt='DABA logo' className='logo-image' />
         </Link>
       </div>
       <Link to='/krepselis' className='cart'>
