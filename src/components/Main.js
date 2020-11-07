@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import './Main.css'
 
 import Home from './home/Home';
 import Products from './products/Products';
