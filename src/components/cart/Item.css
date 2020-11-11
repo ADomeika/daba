@@ -1,0 +1,64 @@
+.item {
+  display: flex;
+  margin: 16px 0;
+}
+
+.item__image {
+  flex: 1;
+}
+
+.item__image > img {
+  width: 100%;
+}
+
+.item__information {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin-right: 16px;
+}
+
+.item__separator {
+  margin: 24px 0 8px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding: 16px 0;
+  position: relative;
+}
+
+.information__quantity {
+  align-items: center;
+  display: flex;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.information__quantity > button {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 8px;
+  touch-action: manipulation;
+}
+
+.item__text {
+  font-size: 18px;
+}
+
+.item__spray {
+  margin-bottom: 16px;
+}
+
+.information__actions {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  display: flex;
+}

@@ -31,7 +31,7 @@ const DATA = [
 
 function Products() {
   return (
-    <div className='product-list'>
+    <main className='product-list'>
       {DATA.map(({ id, title, image, price }) => (
         <Product
           key={id}
@@ -41,7 +41,7 @@ function Products() {
           price={price}
         />
       ))}
-    </div>
+    </main>
   )
 }
 

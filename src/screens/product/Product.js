@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './Product.css';
 
-import AppButton from '../ui/AppButton';
+import AppButton from '../../components/ui/AppButton';
 
 const DATA = {
   id: 1,
   title: 'Silauoges hidrolatas',
   image: 'https://static.wixstatic.com/media/d7ea37_c28bae3e7b624121ab1bafe495aff1db~mv2_d_3648_2736_s_4_2.png/v1/fill/w_420,h_420,al_c,q_85,usm_0.66_1.00_0.01/d7ea37_c28bae3e7b624121ab1bafe495aff1db~mv2_d_3648_2736_s_4_2.webp',
-  price: 6.99
+  price: 6.99,
+  description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula risus at aliquam pharetra. Ut eget ex in urna accumsan placerat sit amet a libero. Pellentesque pretium sed sem a sollicitudin. Sed ornare, ligula et fermentum pharetra, neque ipsum condimentum urna, sed congue lorem neque sed mi. Vivamus fringilla at mauris ut euismod. Fusce tristique venenatis mauris, iaculis tincidunt diam consectetur eu. Cras ac iaculis nunc, eu tempus dolor.
+
+  Proin eu consectetur metus. Ut a lobortis est. Aliquam non tristique nisi. Etiam lobortis facilisis mauris, in rhoncus nibh tincidunt venenatis. Sed et bibendum tortor. Nulla et diam quis velit consectetur egestas. Nullam facilisis faucibus luctus. Etiam sodales at lorem vitae scelerisque.`
 }
 
 function Product() {
@@ -32,7 +35,7 @@ function Product() {
   }
 
   return (
-    <div className='product'>
+    <main className='product'>
       <div>
         <img src={DATA.image} alt={DATA.title} className='product__image' />
         <h2 className='product__title'>{DATA.title}</h2>
@@ -82,7 +85,11 @@ function Product() {
       <div className='actions'>
         <AppButton onClick={addToCart}>I Krepseli</AppButton>
       </div>
-    </div>
+
+      <p className='description'>
+        {DATA.description}
+      </p>
+    </main>
   )
 }
 

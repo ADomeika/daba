@@ -1,7 +1,16 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Montserrat'),
+    url('./assets/fonts/Montserrat/Montserrat-Regular.ttf') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
 
 html,
 body,
@@ -106,8 +115,9 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
   background-color: #213015;
+  color: #fff;
+  line-height: 1;
 }
 ol,
 ul {

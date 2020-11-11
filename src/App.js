@@ -10,9 +10,9 @@ function App() {
       <header className='header'>
         <Header />
       </header>
-      <main className='main'>
-        <Main />
-      </main>
+
+      <Main />
+      
       <footer className='footer'>
         <Footer />
       </footer>

@@ -1,0 +1,19 @@
+.cart {
+  padding: 0;
+}
+
+.cart__title {
+  font-size: 32px;
+  margin: 32px 0;
+  text-align: center;
+}
+
+.cart__actions {
+  display: flex;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.cart__actions > button {
+  max-width: 400px;
+}
