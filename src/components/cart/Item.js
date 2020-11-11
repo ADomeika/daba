@@ -26,7 +26,9 @@ function Item({ item }) {
               <p>{item.quantity}</p>
               <button>+</button>
             </div>
-            <Trash width='25' height='25' />
+            <button className='information__delete'>
+              <Trash width='25' height='25' />
+            </button>
           </div>
         </div>
       </div>

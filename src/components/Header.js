@@ -9,6 +9,23 @@ const Header = () => {
 
   return (
     <div className='header__inner'>
+      <nav role='navigation' className={`menu${isOpen ? ' menu--open' : ''}`}>
+        <ul>
+          <li className='menu__item'>
+            <Link to='/' className='menu__link'>Pagrindinis</Link>
+          </li>
+          <li className='menu__item'>
+            <Link to='/produktai' className='menu__link'>Parduotuve</Link>
+          </li>
+          <li className='menu__item'>
+            <Link to='/apie' className='menu__link'>Apie Mus</Link>
+          </li>
+          <li className='menu__item'>
+            <Link to='/kontaktai' className='menu__link'>Kontaktai</Link>
+          </li>
+        </ul>
+      </nav>
+
       <div className='mobile-nav'>
         <nav>
           <button
