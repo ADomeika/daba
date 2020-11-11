@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa01d5b359644a63c8d56c4d6de7a6be",
+    "revision": "f7e3d4e78ef18a229216efb1ac66fbae",
     "url": "/daba/index.html"
   },
   {
-    "revision": "c83b08521c69879e1405",
-    "url": "/daba/static/css/main.6649cfe3.chunk.css"
+    "revision": "1635bf9446377d91eb72",
+    "url": "/daba/static/css/main.5affb90a.chunk.css"
   },
   {
     "revision": "1a04be008705e480eac7",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/daba/static/js/2.a64b0565.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c83b08521c69879e1405",
+    "revision": "1635bf9446377d91eb72",
     "url": "/daba/static/js/main.435c670f.chunk.js"
   },
   {

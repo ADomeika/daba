@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/daba/static/css/main.6649cfe3.chunk.css",
+    "main.css": "/daba/static/css/main.5affb90a.chunk.css",
     "main.js": "/daba/static/js/main.435c670f.chunk.js",
     "main.js.map": "/daba/static/js/main.435c670f.chunk.js.map",
     "runtime-main.js": "/daba/static/js/runtime-main.c9a4612b.js",
@@ -8,9 +8,9 @@
     "static/js/2.a64b0565.chunk.js": "/daba/static/js/2.a64b0565.chunk.js",
     "static/js/2.a64b0565.chunk.js.map": "/daba/static/js/2.a64b0565.chunk.js.map",
     "index.html": "/daba/index.html",
-    "precache-manifest.9bc52a382f53f559b94799c49027726c.js": "/daba/precache-manifest.9bc52a382f53f559b94799c49027726c.js",
+    "precache-manifest.724be4a1b09416665e26649b1eb8febc.js": "/daba/precache-manifest.724be4a1b09416665e26649b1eb8febc.js",
     "service-worker.js": "/daba/service-worker.js",
-    "static/css/main.6649cfe3.chunk.css.map": "/daba/static/css/main.6649cfe3.chunk.css.map",
+    "static/css/main.5affb90a.chunk.css.map": "/daba/static/css/main.5affb90a.chunk.css.map",
     "static/js/2.a64b0565.chunk.js.LICENSE.txt": "/daba/static/js/2.a64b0565.chunk.js.LICENSE.txt",
     "static/media/index.css": "/daba/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/about-image-1.jpg": "/daba/static/media/about-image-1.b396c21b.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.c9a4612b.js",
     "static/js/2.a64b0565.chunk.js",
-    "static/css/main.6649cfe3.chunk.css",
+    "static/css/main.5affb90a.chunk.css",
     "static/js/main.435c670f.chunk.js"
   ]
 }
