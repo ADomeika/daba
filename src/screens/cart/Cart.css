@@ -1,5 +1,12 @@
 .cart {
+  flex: 1;
   padding: 0;
+}
+
+.cart__empty {
+  font-size: 24px;
+  padding-top: 48px;
+  text-align: center;
 }
 
 .cart__title {
@@ -16,4 +23,10 @@
 
 .cart__actions > button {
   max-width: 400px;
+}
+
+.cart__link-to-shop {
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
 }

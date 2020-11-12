@@ -40,7 +40,7 @@ const cartReducer = (state = initState, action = {}) => {
 
       return {
         ...state,
-        items: state.items.filter((item) => item != itemToRemove),
+        items: state.items.filter((item) => item !== itemToRemove),
         total: newTotal
       };
     case SUBTRACT_QUANTITY:
@@ -49,7 +49,7 @@ const cartReducer = (state = initState, action = {}) => {
       if (addedItem.quantity === 1) {        
         return {
           ...state,
-          items: state.items.filter((item) => item != addedItem),
+          items: state.items.filter((item) => item !== addedItem),
           total: state.total - addedItem.price
         };
       } else {
