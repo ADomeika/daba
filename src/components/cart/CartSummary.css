@@ -3,6 +3,11 @@
   padding: 16px 32px;
 }
 
+.summary {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .summary__items,
 .summary__delivery,
 .summary__total {
