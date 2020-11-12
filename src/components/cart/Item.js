@@ -1,9 +1,24 @@
 import React from 'react'
-import Trash from '../svgs/Trash';
+import { connect } from 'react-redux';
 import './Item.css';
 
-function Item({ item }) {
+import Trash from '../svgs/Trash';
+import { addQuantity, subtractQuantity, removeFromCart } from '../../actions/CartActions';
+
+function Item({ item, onAddQuantity, onSubtractQuantity, onRemoveFromCart }) {
   const spray = item.spray ? 'Su purkstuku' : 'Be purkstuko';
+
+  const addQuantity = () => {
+    onAddQuantity({ id: item.id, spray: item.spray })
+  }
+
+  const subtractQuantity = () => {
+    onSubtractQuantity({ id: item.id, spray: item.spray })
+  }
+
+  const removeFromCart = () => {
+    onRemoveFromCart({ id: item.id, spray: item.spray })
+  }
 
   return (
     <div className='item'>
@@ -18,15 +33,15 @@ function Item({ item }) {
 
         <div className='information'>
           <p className='item__text item__spray'>{spray}</p>
-          <p className='item__text'>Kaina: £{item.price}</p>
+          <p className='item__text'>Kaina: £{item.price.toFixed(2)}</p>
           
           <div className='information__actions'>
             <div className='information__quantity'>
-              <button>-</button>
+              <button onClick={subtractQuantity}>-</button>
               <p>{item.quantity}</p>
-              <button>+</button>
+              <button onClick={addQuantity}>+</button>
             </div>
-            <button className='information__delete'>
+            <button className='information__delete' onClick={removeFromCart}>
               <Trash width='25' height='25' />
             </button>
           </div>
@@ -36,4 +51,10 @@ function Item({ item }) {
   )
 }
 
-export default Item
+const mapDispatchToProps = (dispatch) => ({
+  onAddQuantity: (details) => dispatch(addQuantity(details)),
+  onSubtractQuantity: (details) => dispatch(subtractQuantity(details)),
+  onRemoveFromCart: (details) => dispatch(removeFromCart(details)),
+});
+
+export default connect(null, mapDispatchToProps)(Item);

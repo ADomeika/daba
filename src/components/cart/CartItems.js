@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react'
-import './CartItems.css'
-import Item from './Item'
+import React, { Fragment } from 'react';
+import './CartItems.css';
+
+import Item from './Item';
 
 function CartItems({ data }) {
   return (
@@ -8,15 +9,17 @@ function CartItems({ data }) {
       {data.map((item, index) => {
         if (index > 0) {
           return (
-            <Fragment key={item.id}>
+            <Fragment key={item.id + item.spray}>
               <hr />
-              <Item item={item} />
+              <Item
+                item={item}
+              />
             </Fragment>
           )
         }
         return (
           <Item
-            key={item.id}
+            key={item.id + item.spray}
             item={item}
           />
         )
@@ -25,4 +28,4 @@ function CartItems({ data }) {
   )
 }
 
-export default CartItems
+export default CartItems;

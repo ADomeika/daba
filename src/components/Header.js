@@ -4,7 +4,7 @@ import './Header.css';
 
 import Bag from './svgs/Bag';
 
-const Header = () => {
+const Header = ({ cartQuantity }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -46,7 +46,7 @@ const Header = () => {
       <Link to='/krepselis' className='cart'>
         <Bag width='30' height='30' />
         <div className='cart-quantity'>
-          <span>0</span>
+          <span>{cartQuantity}</span>
         </div>
       </Link>
     </div>

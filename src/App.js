@@ -1,14 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import './App.css';
+
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
 
-function App() {
+function App({ cartQuantity }) {
   return (
     <div className='background'>
       <header className='header'>
-        <Header />
+        <Header cartQuantity={cartQuantity} />
       </header>
 
       <Main />
@@ -20,4 +22,9 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = ({ cartReducer }) => ({
+  cartQuantity: cartReducer.items.length,
+});
+
+
+export default connect(mapStateToProps)(App);
