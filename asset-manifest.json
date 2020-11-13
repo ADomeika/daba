@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/daba/static/css/main.767c1db4.chunk.css",
-    "main.js": "/daba/static/js/main.2af94594.chunk.js",
-    "main.js.map": "/daba/static/js/main.2af94594.chunk.js.map",
+    "main.js": "/daba/static/js/main.a8574a2b.chunk.js",
+    "main.js.map": "/daba/static/js/main.a8574a2b.chunk.js.map",
     "runtime-main.js": "/daba/static/js/runtime-main.c9a4612b.js",
     "runtime-main.js.map": "/daba/static/js/runtime-main.c9a4612b.js.map",
-    "static/js/2.ac010d23.chunk.js": "/daba/static/js/2.ac010d23.chunk.js",
-    "static/js/2.ac010d23.chunk.js.map": "/daba/static/js/2.ac010d23.chunk.js.map",
+    "static/js/2.3bdf66ef.chunk.js": "/daba/static/js/2.3bdf66ef.chunk.js",
+    "static/js/2.3bdf66ef.chunk.js.map": "/daba/static/js/2.3bdf66ef.chunk.js.map",
     "index.html": "/daba/index.html",
-    "precache-manifest.730dd8c2f7f5e430bff9ef0ac3003058.js": "/daba/precache-manifest.730dd8c2f7f5e430bff9ef0ac3003058.js",
+    "precache-manifest.ef10ec08300b77e38628afd9809426c3.js": "/daba/precache-manifest.ef10ec08300b77e38628afd9809426c3.js",
     "service-worker.js": "/daba/service-worker.js",
     "static/css/main.767c1db4.chunk.css.map": "/daba/static/css/main.767c1db4.chunk.css.map",
-    "static/js/2.ac010d23.chunk.js.LICENSE.txt": "/daba/static/js/2.ac010d23.chunk.js.LICENSE.txt",
+    "static/js/2.3bdf66ef.chunk.js.LICENSE.txt": "/daba/static/js/2.3bdf66ef.chunk.js.LICENSE.txt",
     "static/media/index.css": "/daba/static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/about-image-1.jpg": "/daba/static/media/about-image-1.b396c21b.jpg",
     "static/media/App.css": "/daba/static/media/background.0fc87cd0.jpg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c9a4612b.js",
-    "static/js/2.ac010d23.chunk.js",
+    "static/js/2.3bdf66ef.chunk.js",
     "static/css/main.767c1db4.chunk.css",
-    "static/js/main.2af94594.chunk.js"
+    "static/js/main.a8574a2b.chunk.js"
   ]
 }
