@@ -51,70 +51,78 @@ function Product({ onRequestProduct, onAddToCart, product, isPending, error }) {
         ? <p>KRAUNASI...</p>
         : (
           <>
-            <div>
-              <img src={DATA.image} alt={product.title} className='product__image' />
-              <h2 className='product__title'>{product.title}</h2>
-            </div>
-
-            <div className='additions'>
+            <div className='product__primary-information'>
               <div>
-                <input
-                  type='radio'
-                  name='additions'
-                  className='additions-input'
-                  id='addition__with-spray'
-                  onChange={() => setSpray(true)}
-                />
-                <label htmlFor='addition__with-spray' className='additions-label'>
-                  <div>
-                    <img className='additions-image' src={require('../../assets/images/cap-spray.png')} alt='su purkstuku' />
-                    <p>Su purkstuku</p>
-                  </div>
-                </label>
-              </div>
-
-              <div>
-                <input
-                  type='radio'
-                  name='additions'
-                  className='additions-input'
-                  id='addition__without-spray'
-                  value='no-spray'
-                  onChange={() => setSpray(false)}
-                  defaultChecked
-                />
-                <label htmlFor='addition__without-spray' className='additions-label'>
-                  <div>
-                    <img className='additions-image' src={require('../../assets/images/cap-no-spray.png')} alt='be purkstuko' />
-                    <p>Be purkstuko</p>
-                  </div>
-                </label>
+                <img src={DATA.image} alt={product.title} className='product__image' />
+                <h2 className='product__title'>{product.title}</h2>
               </div>
             </div>
 
-            <div>
-              <p className='product__price'>Kaina: £{DATA.price}</p>
-            </div>
+            <div className='product__secondary-information'>
+              <div className='additions'>
+                <div>
+                  <input
+                    type='radio'
+                    name='additions'
+                    className='additions-input'
+                    id='addition__with-spray'
+                    onChange={() => setSpray(true)}
+                  />
+                  <label htmlFor='addition__with-spray' className='additions-label'>
+                    <div className='addition__wrapper'>
+                      <div className='addition__image-wrapper'>
+                        <img className='additions-image' src={require('../../assets/images/spray-cap.png')} alt='su purkstuku' />
+                      </div>
+                      <p>Su purkstuku</p>
+                    </div>
+                  </label>
+                </div>
 
-            <div className='quantity'>
-              <button
-                className='quantity__reduce'
-                onClick={() => changeQuantity('decrease')}
-                disabled={quantity === 1}
-              >-</button>
-              
-              <p className='quantity__value'>{quantity}</p>
-              
-              <button
-                className='quantity__increase'
-                onClick={() => changeQuantity('increase')}
-              >+</button>
-            </div>
+                <div>
+                  <input
+                    type='radio'
+                    name='additions'
+                    className='additions-input'
+                    id='addition__without-spray'
+                    value='no-spray'
+                    onChange={() => setSpray(false)}
+                    defaultChecked
+                  />
+                  <label htmlFor='addition__without-spray' className='additions-label'>
+                    <div className='addition__wrapper'>
+                      <div className='addition__image-wrapper'>
+                        <img className='additions-image' src={require('../../assets/images/cap.png')} alt='be purkstuko' />
+                      </div>
+                      <p>Be purkstuko</p>
+                    </div>
+                  </label>
+                </div>
+              </div>
 
-            <div className='actions'>
-              <AppButton onClick={addToCart}>I Krepseli</AppButton>
-            </div>
+              <div>
+                <p className='product__price'>Kaina: £{DATA.price}</p>
+              </div>
 
+              <div className='quantity'>
+                <button
+                  className='quantity__reduce'
+                  onClick={() => changeQuantity('decrease')}
+                  disabled={quantity === 1}
+                >-</button>
+                
+                <p className='quantity__value'>{quantity}</p>
+                
+                <button
+                  className='quantity__increase'
+                  onClick={() => changeQuantity('increase')}
+                >+</button>
+              </div>
+
+              <div className='actions'>
+                <AppButton onClick={addToCart}>I Krepseli</AppButton>
+              </div>
+
+            </div>
             <p className='description'>
               {product.body}
             </p>

@@ -23,7 +23,7 @@ function App({ cartQuantity }) {
 }
 
 const mapStateToProps = ({ cartReducer }) => ({
-  cartQuantity: cartReducer.items.length,
+  cartQuantity: cartReducer.cartQuantity,
 });
 
 
